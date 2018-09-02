@@ -1,0 +1,15 @@
+{
+  "name": "basic-node-operations",
+  "version": "1.0.0",
+  "description": "basic terminal operations",
+  "main": "bash.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "terminal",
+    "commands"
+  ],
+  "author": "Paul Brower",
+  "license": "ISC"
+}
