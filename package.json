@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/paulyglot/basic-node-operations#readme",
   "dependencies": {
-    "read-last-lines": "^1.6.0"
+    "read-last-lines": "^1.6.0",
+    "readline": "^1.3.0"
   }
 }
