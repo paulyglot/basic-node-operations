@@ -1,0 +1,25 @@
+//1.Run the commands sort, wc and uniq on the commands.js file. Explain how they work and what the output was.
+Sort: it sorted the lines in alphabetical order (referencing first Letter of first word in each line)
+
+wc: returned 43     101     999 commands.js; 43 represents number of lines, 101 number of words, 999 the characters.
+
+uniq: gave me back the document without any repeating lines (would've deleted lines that were repeating if they existed, but I had no repeating lines so it gave me back the same document).
+
+//2.Using the pipe (|) connect at least two commands and run it on commands.js. Explain what the 
+//output was and why the specific data was outputted.
+
+Answer: I first ran 'wc commands.js' to get the lines, words and characters in the document which resulted in: 43     101     999  
+
+Knowing this information, we can evaluate removed characters, lines and words from a sort and uniq combined pipe function. I lastly ran 'sort commands.js | uniq | wc', this first sorted the commands js file, this output was the input for the piped uniq function which then removed certain lines, words and characters. 
+
+The resulting wc for this was: 34      99     975. So as we can see, the uniq function removed 9 lines, 2 words and 24 characters, which means, there was a lot of lines between the code that was deleted and very few words actually repeating in lines. This was very useful to find out.
+
+//6. Given a string, reverse the order of characters in each word within a sentence while maintaining the
+// original word order and whitespace and return the string. 
+
+var array = (sentence) => {	
+	let arr = sentence.split(" ");
+	return arr;
+}
+array("Hello Paul how is your labor day going?");
+

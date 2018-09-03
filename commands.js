@@ -14,7 +14,6 @@ const fs = require("fs");
 
    switch (command) {
      case "echo":
-
      commandLibrary.echo(userInputArray.slice(1).join(" "));
        break;
 
@@ -30,10 +29,8 @@ const fs = require("fs");
        commandLibrary.head(userInputArray.slice(1));
        break;       
 
-     case "errorHandler":
+     default:
        commandLibrary.errorHandler(userInputArray.slice(1));
-       break;
-
     }
  }
 
