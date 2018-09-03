@@ -17,6 +17,14 @@ const fs = require("fs");
 
      commandLibrary.echo(userInputArray.slice(1).join(" "));
        break;
+
+     case "cat":
+       commandLibrary.cat(userInputArray.slice(1));
+       break;
+
+     case "tail":
+       commandLibrary.tail(userInputArray.slice(1));
+       break;
     }
  }
 
@@ -25,7 +33,22 @@ const fs = require("fs");
 
  	"echo": function(userInput) {
        done(userInput);
+   },
+
+   "cat": function(fullPath) {
+       const fileName = fullPath[0];
+       fs.readFile(fileName, (err, data) => {
+           if (err) throw err;
+           done(data);
+       });
+   },
+
+   "tail": function(fullPath) {
+       const readLastLines = require('read-last-lines');
+       readLastLines.read('./commands.js', 10)
+        .then((lines) => console.log(lines));
    }
+
  };
 
  module.exports.commandLibrary = commandLibrary;

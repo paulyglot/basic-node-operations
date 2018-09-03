@@ -11,5 +11,16 @@
     "commands"
   ],
   "author": "Paul Brower",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulyglot/basic-node-operations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/paulyglot/basic-node-operations/issues"
+  },
+  "homepage": "https://github.com/paulyglot/basic-node-operations#readme",
+  "dependencies": {
+    "read-last-lines": "^1.6.0"
+  }
 }
